@@ -17,10 +17,8 @@ class Server {
   middlewares() {
     //Cors
     this.app.use(cors());
-
     // Lectura y Parseo del formato
     this.app.use(express.json());
-
     //Carpeta estatica
     this.app.use(express.static("public"));
   }
